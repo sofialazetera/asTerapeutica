@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saque su turno con nuestros profesionales de forma online en asociación terapéutica. Fácil, rápido y ecónomico.">
+    <meta name="keywords" content="TURNOS-ONLINE, PROFESIONALES, TERAPEUTAS, ASOCIACIÓN-TERAPÉUTICA, PRESENCIAL, ONLINE, TERAPIA">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="imagenes/asociacion-terapeutica-minilogo.png">
+    <title>Turnos🎰| Asociación Terapéutica 👩‍⚕️👨‍⚕️🗣</title>
+
+</head>
+<body>
+<!--Logo con Nombre y slogan en el header-->
+    <header class="encabezado">
+        <a href="index.html"><img src="imagenes/asociacion-terapeutica192x192.png" class="encabezado__logo animate__fadeInLeft" alt="logo de asociación terapéutica" ></a>
+        <div class="animate__fadeInRight encabezado__flex">
+            <h1 class="encabezado__titulo">Asociación Terapéutica</h1>
+            <p class="centrado encabezado_parrafo"><em>El lugar donde tus profesionales están</em></p>
+        </div>   
+    </header>
+    <!--Menu de navegador-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark nav-index">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="index.html">    
+                <img src="imagenes/asociacion-terapeutica32x32.png " class="rounded-circle" alt="Asociación Terapeutica"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-index__ul">
+                    <li class="nav-item nav-index__li "> <a class="nav-link t nav-index__a" aria-current="page" href="index.html">¿Quiénes Somos?</a></li>
+                    <li class="nav-item nav-index__li"><a class="nav-link nav-index__a" href="nuestros-profesionales.html">Nuestros Profesionales </a></li>
+                    <li class="nav-item nav-index__li nav-index__li--activo"><a class="nav-link nav-index__a" href="turnos.html">Turnos</a></li>
+                    <li class="nav-item dropdown nav-index__li">
+                        <a class="nav-link dropdown-toggle nav-index__a" href="articulos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Articulos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="articulos.html#publicacion">Publicaciones</a></li>
+                            <li><a class="dropdown-item"  href="articulos.html#noticia">Noticias</a></li>
+                         
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Explorar" aria-label="Search">
+                  <button class="btn btn-sm btn-outline-light" type="submit">🔍</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main>
+<!--Sección destinada a elegir turnos con los profesionales disponibles-->
+        <section class="margenes30">
+            <article >
+                <h2 class="bigSize font centrado">Saque su turno Online</h2>
+                <p>Para poder reservar su turno, primero tiene que acceder con su usuario</p>
+<!-- Button trigger modal -->
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Acceda a su Cuenta
+                </button>
+<!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Acceda a su cuenta</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            <div class="modal-body">
+                                <form>
+                                    <h1 class="h3 mb-3 fw-normal btn-success">Ingrese con su usuario</h1>
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Email</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Contraseña</label>
+                                    </div>
+                                    <div class="checkbox mb-3">
+                                        <label>
+                                            <input type="checkbox" value="remember-me"> Recordar datos
+                                        </label>
+                                    </div>
+                                        <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Crear Usuario</button>
+                        </div>
+            </article>
+        </section>
+    </main>
+<!--Aquí comienza el footer-->
+    <footer class="pie">
+<!--Footer con datos-->
+        <div class="pie__izquierda">
+            <p class="pie__parrafo">Asociación Terapéutica XX</p>
+            <p class="pie__parrafo">CUIT: XX-XXXXXXXX-X </p>
+            <p class="pie__parrafo">CUIT: XX-XXXXXXXX-X</p> 
+            <p class="pie__parrafo">Contacto institucional: contacto@asterapeutica.com.xx</p>
+        </div>
+<!--Footer a formulario de contacto-->
+        <div class="pie__medio">
+            ¿Tiene alguna duda? <a href="contact-us.html"> Contáctenos </a>
+        </div>
+<!--Redes Sociales-->
+        <div class="pie__derecha">
+            <a href="#" target="_blank"><img  src="imagenes/ig1.png" alt="acceso a instagram" width="50px"></a>
+            <a href="#"><i class="fab fa-instagram"></i> </a>
+            <a href="#" target="_blank"><img  src="imagenes/fb2.png" alt="acceso a facebook" width="50px"></a>
+        </div>   
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
