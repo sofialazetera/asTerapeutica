@@ -21,7 +21,10 @@
             .contenedor__caja{
                 width: 80%;
                 padding-top: 1rem;
-            }            
+            }
+            .contenedor__imagen{
+                border:$ColorAzul 2px solid ;
+            }          
         }           
 }
 /*Grid para Artículos*/

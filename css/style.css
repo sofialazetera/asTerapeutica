@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #F8F1F1;
+  background-color: #ffffff;
   line-height: 1.5;
   font-family: 'Old Standard TT', serif;
   font-size: 1.2rem; }
@@ -33,7 +33,7 @@ a {
   font-size: 2rem; }
 
 article {
-  background-color: #fad05a;
+  background-color: #facf5abe;
   animation-duration: 2s;
   border-radius: 1rem;
   box-shadow: 7px 7px 15px #967313;
@@ -60,13 +60,13 @@ article {
     flex-grow: .2;
     align-items: center; }
     .encabezado .encabezado__flex .encabezado__titulo {
-      color: #F8F1F1;
+      color: #ffffff;
       font-size: 2em;
       font-family: "Gentium Basic", serif;
       text-align: center;
       text-transform: uppercase; }
     .encabezado .encabezado__flex .encabezado_parrafo {
-      color: #F8F1F1; }
+      color: #ffffff; }
 
 .nav-index {
   background-color: #3c8592ec;
@@ -76,10 +76,10 @@ article {
     font-size: 1rem;
     text-align: center; }
     .nav-index .nav-index__li .nav-index__a {
-      color: #F8F1F1;
+      color: #ffffff;
       padding: .3rem; }
       .nav-index .nav-index__li .nav-index__a:hover, .nav-index .nav-index__li:hover ul {
-        background-color: #F8F1F1;
+        background-color: #ffffff;
         color: #156372; }
     .nav-index .nav-index__li:hover ul {
       background-color: #3c8592;
@@ -105,6 +105,8 @@ article {
     .contenedor .contenedor__flex .contenedor__caja {
       width: 80%;
       padding-top: 1rem; }
+    .contenedor .contenedor__flex .contenedor__imagen {
+      border: #156372 2px solid; }
 
 /*Grid para Artículos*/
 .artPub {
@@ -122,10 +124,10 @@ article {
       border-right: 5px #156372 dashed;
       padding-right: 15px; }
       .artPub .artPub__articulo .artPub__publicaciones .artPub__acordeon {
-        background-color: #fad05a; }
+        background-color: #facf5abe; }
       .artPub .artPub__articulo .artPub__publicaciones .artPub__boton {
         color: #156372;
-        background-color: #fad05a; }
+        background-color: #facf5abe; }
   .artPub .artPub__notiPub {
     grid-area: notiPub;
     text-align: left;
@@ -169,7 +171,7 @@ iframe {
   align-items: center;
   padding: 1rem; }
   .pie a {
-    color: #F8F1F1; }
+    color: #ffffff; }
     .pie a:hover {
       color: #156372; }
   .pie .pie__izquierda {
