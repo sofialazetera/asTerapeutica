@@ -1,0 +1,91 @@
+@mixin articulos ($alinea) {
+    margin: 5px 0px 5px 0px;
+    text-align: $alinea;
+}
+/*Contenedor para Quienes Somos y Nuestros Profesionales*/
+.contenedor{
+        text-align: justify;
+/*Estilo para la imagen de quienes somos*/
+        .contenedor__img{
+            width: 100%;
+            height: auto;
+        }
+ /*FlexBox para Divs Nuestros profesionales y Somos*/     
+        .contenedor__flex{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            justify-content: space-around;
+            align-items:center;
+        /*tamaño de las descripciones de  nuestros profesionles*/
+            .contenedor__caja{
+                width: 80%;
+                padding-top: 1rem;
+            }            
+        }           
+}
+/*Grid para Artículos*/
+.artPub{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .2fr;
+    grid-template-areas: 
+    "articulo articulo"
+    "notiPub notiPub";
+    .artPub__articulo{
+        grid-area: articulo;
+        text-align: right;
+    /*Decorado para Sección de Publicaciones*/
+        .artPub__publicaciones{
+            @include articulos(right);
+            border-right: 5px $ColorAzul dashed;
+            padding-right: 15px;
+        .artPub__acordeon{
+            background-color:$ColorAmarillo;
+        }
+        .artPub__boton{
+            color:$ColorAzul;
+            background-color:$ColorAmarillo;
+            
+        }
+        }
+    }
+    .artPub__notiPub{
+        grid-area: notiPub;
+        text-align: left;
+    /*Decorado para Sección de noticias*/
+        .artPub__noticias{
+            @include articulos(left);
+            border-left: 5px $ColorAzul dashed;
+            padding-left: 15px;
+
+        }
+    }
+}
+
+/*Sección Contact Us - Flex para dispositos moviles y Grid para el resto - Para Contact Us */
+.contact-us{
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    .contact-us__fieldset{
+        border: 1px black solid;
+        width: auto;
+        .contact-us__display{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+input:focus{
+    transform:scale(1.2,1.2) ;
+}
+iframe{
+    width:448px*.64;
+    height: 252px*.64;
+}
+.carouselAncho{
+    width: auto;
+}

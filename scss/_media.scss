@@ -1,0 +1,100 @@
+@media only screen and (min-width:600px){
+    .pie{
+        font-size: 12px;
+        flex-direction: row;
+    }  
+    .contact-us{
+        width: 80%;
+        .contact-us__fieldset{  
+            .contact-us__display{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: .7fr .2fr .2fr 1.5fr;
+                grid-template-areas: 
+                "nombre datos"
+                "preferencia preferencia"
+                "newsletter newsletter"
+                "complete complete";
+                justify-items: center;
+                &--nombre{
+                    grid-area: nombre;
+                    height: 1em; 
+                }
+                &--preferencia{
+                    grid-area: preferencia;
+                }
+                &--datos{
+                    grid-area: datos;
+                    height: 1em;
+                }
+                &--newsletter{
+                    grid-area: newsletter
+                }
+                &--complete{
+                    grid-area: complete;
+                }
+            }
+        }
+    }
+    iframe{
+        width:448px;
+        height: 252px;
+    }
+    .carouselAncho{
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width:1024px)
+{
+
+    .artPub{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+        "articulo articulo notiPub"
+        "articulo articulo notiPub"
+    }
+    .contenedor{
+        .contenedor__flex{
+            flex-direction: row  ;
+            .contenedor__caja{
+                width: 40%;
+                padding-left: 1rem;
+                padding-top: 0;
+            }    
+        }
+
+    }
+    .encabezado{
+        flex-direction: row;
+        .encabezado__flex{
+            .encabezado__titulo{
+            font-size: 2.5em;
+        }
+    }
+    }
+    .nav-index{
+        .nav-index__li{
+            .nav-index__a{
+            padding: 1rem;
+            }
+        }
+    }
+/*contact us ancho*/
+    .contact-us{
+        width: 55%;
+ 
+    }
+    .carouselAncho{
+        width: 85%;
+        margin: auto;
+    }
+    .margenes30{
+        margin: 30px;
+    }
+
+    
+}

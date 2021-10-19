@@ -1,0 +1,60 @@
+.encabezado{
+    padding-bottom: 10px;
+    background-image: url(/imagenes/azul-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .encabezado__logo{
+        border-radius: 50%;
+        margin-top: 10%;
+        animation-duration: 2s;
+        width: 120px;
+    }
+    .encabezado__flex{
+        animation-duration: 1.5s;
+        display: flex;
+        flex-direction: column;
+        flex-grow: .2;
+        align-items: center;
+        .encabezado__titulo{
+        color:$colorClaro;
+        font-size: 2em;
+        font-family: $ff_title;
+        text-align: center;
+        text-transform:uppercase;
+        }
+        .encabezado_parrafo{
+            color: $colorClaro;
+        }
+    }
+
+} 
+.nav-index{
+    background-color:#3c8592ec;
+    font-size: 0;
+    padding: 0;
+    .nav-index__li{
+        font-size: 1rem;
+        text-align: center;
+        .nav-index__a{
+            color:$colorClaro;
+            padding: .3rem;
+            &:hover{
+                background-color:$colorClaro;
+                color:$ColorAzul;
+            }
+        }
+        &:hover ul {
+            background-color: #3c8592;
+            display: block;
+            @extend .nav-index__a:hover
+        }
+        &--activo{
+            font-style: italic;
+        }       
+    }
+    
+}

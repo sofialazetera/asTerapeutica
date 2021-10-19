@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $colorClaro;
+    line-height: 1.5;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.2rem;
+}
+    //Clase para agregar margenes a las secciones
+    .margenes30{
+    margin: 5px, 2px, 5px, 2px;
+    }
+    //Padding
+    .padd{
+        padding: 1rem;
+    }
+    //estilo centrado de texto
+    .centrado{
+        text-align: center;
+    }
+    /*HIPERVINCULOS SIN DECORACIÓN*/
+    a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+            color:$ColorAzul;
+        }    
+    }
+         
+    //Fuente para títulos y encabezados
+
+    .font{
+        font-family: 'Gentium Basic', serif;
+    }
+    
+    //Tamaño de fuente para encabezados
+    .bigSize{
+        font-size: 2rem;
+        }
+    
+    article{
+        background-color:$ColorAmarillo;
+        animation-duration: 2s;
+        border-radius: 1rem;
+        box-shadow: 7px 7px 15px #967313;
+        margin: 1rem .5rem;
+    }
