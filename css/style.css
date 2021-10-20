@@ -41,7 +41,7 @@ article {
 
 .encabezado {
   padding-bottom: 10px;
-  background-image: url(/imagenes/azul-fondo.jpg);
+  background: linear-gradient(to top, #000000, #12505c);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
