@@ -5,6 +5,9 @@
 /*Contenedor para Quienes Somos y Nuestros Profesionales*/
 .contenedor{
         text-align: justify;
+        width: auto;
+        margin-top: 5px;
+        background: linear-gradient(to bottom, $colorClaro, #F8F1F1);
 /*Estilo para la imagen de quienes somos*/
         .contenedor__img{
             width: 100%;
@@ -91,4 +94,13 @@ iframe{
 }
 .carouselAncho{
     width: auto;
+}
+
+.contenedorCards{
+    background: linear-gradient(to top, $colorClaro, #F8F1F1);
+    padding: 2rem;
+    justify-content: center;
+    .contenedorCards__bg{
+    background-color: $ColorAmarillo;
+    }
 }

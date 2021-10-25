@@ -1,6 +1,7 @@
 .pie{
     background: linear-gradient(to top, #000000, #12505c);
-    color: #F8F1F1;
+    .pie__completo{
+    color: $colorClaro ;
     font-size: .5rem;
     display: flex;
     flex-direction: column-reverse;
@@ -13,23 +14,32 @@
             color: $ColorAzul;
         }
     }
-    .pie__izquierda{
-        flex-shrink: 1;
-        padding: 1rem;
-        .pie__parrafo{
-            margin: 0;
-        }       
+        .pie__izquierda{
+            flex-shrink: 1;
+            padding: 1rem;
+            .pie__parrafo{
+                margin: 0;
+            }       
+        }
+        .pie__medio{
+            flex-grow: .4;
+            text-align: center;
+            font-size: 1rem;
+            padding: 1rem;
+        }
+        .pie__derecha{
+            text-align: center;    
+        }
+
     }
-    .pie__medio{
-        flex-grow: .4;
+    .pie__nombramiento{
+        color: $ColorAmarillo;
+        font-size: .5rem;
         text-align: center;
-        padding: 1rem;
-    }
-    .pie__derecha{
-        flex-grow: .3;
-        text-align: right;    
-    }
-        
+        a{
+            color: $colorClaro;
+        }
+    }          
 }
 
 

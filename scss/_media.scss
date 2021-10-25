@@ -1,8 +1,17 @@
 @media only screen and (min-width:600px){
     .pie{
-        font-size: 12px;
-        flex-direction: row;
-    }  
+        .pie__completo{
+            font-size: 12px;
+            flex-direction: row;
+            .pie__derecha{
+                text-align: right;
+                flex-grow: .3;
+            }
+        }
+        .pie__nombramiento{
+            text-align: right;
+        }
+    }
     .contact-us{
         width: 80%;
         .contact-us__fieldset{  
@@ -60,6 +69,7 @@
     .contenedor{
         .contenedor__flex{
             flex-direction: row  ;
+            padding: 30px ;
             .contenedor__caja{
                 width: 40%;
                 padding-left: 1rem;
@@ -89,7 +99,7 @@
  
     }
     .carouselAncho{
-        width: 85%;
+        width: 90%;
         margin: auto;
     }
     .margenes30{

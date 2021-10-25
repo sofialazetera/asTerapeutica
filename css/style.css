@@ -33,7 +33,7 @@ a {
   font-size: 2rem; }
 
 article {
-  background-color: #facf5abe;
+  background-color: #facf5a;
   animation-duration: 2s;
   border-radius: 1rem;
   box-shadow: 7px 7px 15px #967313;
@@ -41,7 +41,7 @@ article {
 
 .encabezado {
   padding-bottom: 10px;
-  background: linear-gradient(to top, #000000, #12505c);
+  background-image: url(../imagenes/azul-fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -90,6 +90,9 @@ article {
 /*Contenedor para Quienes Somos y Nuestros Profesionales*/
 .contenedor {
   text-align: justify;
+  width: auto;
+  margin-top: 5px;
+  background: linear-gradient(to bottom, #ffffff, #F8F1F1);
   /*Estilo para la imagen de quienes somos*/
   /*FlexBox para Divs Nuestros profesionales y Somos*/ }
   .contenedor .contenedor__img {
@@ -124,10 +127,10 @@ article {
       border-right: 5px #156372 dashed;
       padding-right: 15px; }
       .artPub .artPub__articulo .artPub__publicaciones .artPub__acordeon {
-        background-color: #facf5abe; }
+        background-color: #facf5a; }
       .artPub .artPub__articulo .artPub__publicaciones .artPub__boton {
         color: #156372;
-        background-color: #facf5abe; }
+        background-color: #facf5a; }
   .artPub .artPub__notiPub {
     grid-area: notiPub;
     text-align: left;
@@ -161,36 +164,55 @@ iframe {
 .carouselAncho {
   width: auto; }
 
+.contenedorCards {
+  background: linear-gradient(to top, #ffffff, #F8F1F1);
+  padding: 2rem;
+  justify-content: center; }
+  .contenedorCards .contenedorCards__bg {
+    background-color: #facf5a; }
+
 .pie {
-  background: linear-gradient(to top, #000000, #12505c);
-  color: #F8F1F1;
-  font-size: .5rem;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem; }
-  .pie a {
-    color: #ffffff; }
-    .pie a:hover {
-      color: #156372; }
-  .pie .pie__izquierda {
-    flex-shrink: 1;
+  background: linear-gradient(to top, #000000, #12505c); }
+  .pie .pie__completo {
+    color: #ffffff;
+    font-size: .5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
     padding: 1rem; }
-    .pie .pie__izquierda .pie__parrafo {
-      margin: 0; }
-  .pie .pie__medio {
-    flex-grow: .4;
-    text-align: center;
-    padding: 1rem; }
-  .pie .pie__derecha {
-    flex-grow: .3;
-    text-align: right; }
+    .pie .pie__completo a {
+      color: #ffffff; }
+      .pie .pie__completo a:hover {
+        color: #156372; }
+    .pie .pie__completo .pie__izquierda {
+      flex-shrink: 1;
+      padding: 1rem; }
+      .pie .pie__completo .pie__izquierda .pie__parrafo {
+        margin: 0; }
+    .pie .pie__completo .pie__medio {
+      flex-grow: .4;
+      text-align: center;
+      font-size: 1rem;
+      padding: 1rem; }
+    .pie .pie__completo .pie__derecha {
+      text-align: center; }
+  .pie .pie__nombramiento {
+    color: #facf5a;
+    font-size: .5rem;
+    text-align: center; }
+    .pie .pie__nombramiento a {
+      color: #ffffff; }
 
 @media only screen and (min-width: 600px) {
-  .pie {
+  .pie .pie__completo {
     font-size: 12px;
     flex-direction: row; }
+    .pie .pie__completo .pie__derecha {
+      text-align: right;
+      flex-grow: .3; }
+  .pie .pie__nombramiento {
+    text-align: right; }
   .contact-us {
     width: 80%; }
     .contact-us .contact-us__fieldset .contact-us__display {
@@ -225,7 +247,8 @@ iframe {
     grid-template-rows: 1fr auto;
     grid-template-areas: "articulo articulo notiPub" "articulo articulo notiPub"; }
   .contenedor .contenedor__flex {
-    flex-direction: row; }
+    flex-direction: row;
+    padding: 30px; }
     .contenedor .contenedor__flex .contenedor__caja {
       width: 40%;
       padding-left: 1rem;
@@ -240,7 +263,7 @@ iframe {
   .contact-us {
     width: 55%; }
   .carouselAncho {
-    width: 85%;
+    width: 90%;
     margin: auto; }
   .margenes30 {
     margin: 30px; } }
