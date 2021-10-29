@@ -53,6 +53,33 @@
         width: 95%;
         margin: auto;
     }
+    .error404{
+        width: 80%;
+        margin: auto;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .2fr 1fr .2fr;
+        grid-template-areas: 
+        "titulo titulo"
+        "texto imagen"
+        "link link";
+        .error404__h1{
+            grid-area: titulo;
+        }
+        .error404__imagen{
+            width: 280px;
+            grid-area: imagen;
+            align-self: center;
+            justify-self: center;
+        }
+        .error404__texto{
+            grid-area: texto;
+        }
+        .error404__link{
+            grid-area: link;
+        }
+    }
 }
 
 @media only screen and (min-width:1024px)
@@ -105,6 +132,13 @@
     .margenes30{
         margin: 30px;
     }
-
-    
+    .error404{
+        width: 65%;
+    }
+    .error404 {
+        .error404__imagen{
+            width: 400px;
+        }
+    }
+  
 }

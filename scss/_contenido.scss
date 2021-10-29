@@ -7,7 +7,7 @@
         text-align: justify;
         width: auto;
         margin-top: 5px;
-        background: linear-gradient(to bottom, $colorClaro, #F8F1F1);
+        background-color: $colorClaro;
 /*Estilo para la imagen de quienes somos*/
         .contenedor__img{
             width: 100%;
@@ -97,10 +97,29 @@ iframe{
 }
 
 .contenedorCards{
-    background: linear-gradient(to top, $colorClaro, #F8F1F1);
+    background-color: $colorClaro;
     padding: 2rem;
     justify-content: center;
     .contenedorCards__bg{
     background-color: $ColorAmarillo;
     }
 }
+/*estilo para pagina 404*/
+.error404{
+    width: 95%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    text-align: justify;
+    .error404__h1{
+        text-align: center;
+    }
+    .error404__imagen{
+    width: 250px;
+    align-items: center;
+    }
+}
+
+

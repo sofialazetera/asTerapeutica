@@ -92,7 +92,7 @@ article {
   text-align: justify;
   width: auto;
   margin-top: 5px;
-  background: linear-gradient(to bottom, #ffffff, #F8F1F1);
+  background-color: #ffffff;
   /*Estilo para la imagen de quienes somos*/
   /*FlexBox para Divs Nuestros profesionales y Somos*/ }
   .contenedor .contenedor__img {
@@ -116,8 +116,7 @@ article {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr .2fr;
-  grid-template-areas: "articulo articulo"
- "notiPub notiPub"; }
+  grid-template-areas: "articulo articulo" "notiPub notiPub"; }
   .artPub .artPub__articulo {
     grid-area: articulo;
     text-align: right;
@@ -166,11 +165,26 @@ iframe {
   width: auto; }
 
 .contenedorCards {
-  background: linear-gradient(to top, #ffffff, #F8F1F1);
+  background-color: #ffffff;
   padding: 2rem;
   justify-content: center; }
   .contenedorCards .contenedorCards__bg {
     background-color: #facf5a; }
+
+/*estilo para pagina 404*/
+.error404 {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  text-align: justify; }
+  .error404 .error404__h1 {
+    text-align: center; }
+  .error404 .error404__imagen {
+    width: 250px;
+    align-items: center; }
 
 .pie {
   background: linear-gradient(to top, #000000, #12505c); }
@@ -220,10 +234,7 @@ iframe {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: .7fr .2fr .2fr 1.5fr;
-      grid-template-areas: "nombre datos"
- "preferencia preferencia"
- "newsletter newsletter"
- "complete complete";
+      grid-template-areas: "nombre datos" "preferencia preferencia" "newsletter newsletter" "complete complete";
       justify-items: center; }
       .contact-us .contact-us__fieldset .contact-us__display--nombre {
         grid-area: nombre;
@@ -242,15 +253,33 @@ iframe {
     height: 252px; }
   .carouselAncho {
     width: 95%;
-    margin: auto; } }
+    margin: auto; }
+  .error404 {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .2fr 1fr .2fr;
+    grid-template-areas: "titulo titulo" "texto imagen" "link link"; }
+    .error404 .error404__h1 {
+      grid-area: titulo; }
+    .error404 .error404__imagen {
+      width: 280px;
+      grid-area: imagen;
+      align-self: center;
+      justify-self: center; }
+    .error404 .error404__texto {
+      grid-area: texto; }
+    .error404 .error404__link {
+      grid-area: link; } }
 
 @media only screen and (min-width: 1024px) {
   .artPub {
     display: grid;
     grid-template-columns: 1fr 1fr 1.5fr;
     grid-template-rows: 1fr auto;
-    grid-template-areas: "articulo articulo notiPub"
- "articulo articulo notiPub"; }
+    grid-template-areas: "articulo articulo notiPub" "articulo articulo notiPub"; }
   .contenedor .contenedor__flex {
     flex-direction: row;
     padding: 30px; }
@@ -271,4 +300,8 @@ iframe {
     width: 90%;
     margin: auto; }
   .margenes30 {
-    margin: 30px; } }
+    margin: 30px; }
+  .error404 {
+    width: 65%; }
+  .error404 .error404__imagen {
+    width: 400px; } }
