@@ -37,7 +37,8 @@ article {
   animation-duration: 2s;
   border-radius: 1rem;
   box-shadow: 7px 7px 15px #967313;
-  margin: 1rem .5rem; }
+  margin: 1rem .5rem;
+  padding: 1rem; }
 
 .encabezado {
   padding-bottom: 10px;
