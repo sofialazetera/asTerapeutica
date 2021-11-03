@@ -13,8 +13,9 @@
         }
     }
     .contact-us{
-        width: 80%;
+        width: 90%;
         .contact-us__fieldset{  
+            width: auto;
             .contact-us__display{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -27,14 +28,16 @@
                 justify-items: center;
                 &--nombre{
                     grid-area: nombre;
-                    height: 1em; 
+                    align-self: center;
+
                 }
                 &--preferencia{
                     grid-area: preferencia;
                 }
                 &--datos{
                     grid-area: datos;
-                    height: 1em;
+                    align-self: center;
+
                 }
                 &--newsletter{
                     grid-area: newsletter
@@ -122,7 +125,7 @@
     }
 /*contact us ancho*/
     .contact-us{
-        width: 55%;
+        width: 60%;
  
     }
     .carouselAncho{

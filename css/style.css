@@ -147,15 +147,21 @@ article {
   margin: auto;
   padding: 10px; }
   .contact-us .contact-us__fieldset {
-    border: 1px black solid;
-    width: auto; }
+    border: 5px black solid;
+    background-color: #facf5a; }
     .contact-us .contact-us__fieldset .contact-us__display {
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      .contact-us .contact-us__fieldset .contact-us__display input {
+        transform: none;
+        background-color: rgba(128, 128, 128, 0.438); }
+      .contact-us .contact-us__fieldset .contact-us__display .contact-us__display--complete textarea {
+        width: auto;
+        height: auto; }
 
 input:focus {
-  transform: scale(1.2, 1.2); }
+  transform: scale(1.1, 1.1); }
 
 iframe {
   width: 286.72px;
@@ -229,25 +235,27 @@ iframe {
   .pie .pie__nombramiento {
     text-align: right; }
   .contact-us {
-    width: 80%; }
-    .contact-us .contact-us__fieldset .contact-us__display {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: .7fr .2fr .2fr 1.5fr;
-      grid-template-areas: "nombre datos" "preferencia preferencia" "newsletter newsletter" "complete complete";
-      justify-items: center; }
-      .contact-us .contact-us__fieldset .contact-us__display--nombre {
-        grid-area: nombre;
-        height: 1em; }
-      .contact-us .contact-us__fieldset .contact-us__display--preferencia {
-        grid-area: preferencia; }
-      .contact-us .contact-us__fieldset .contact-us__display--datos {
-        grid-area: datos;
-        height: 1em; }
-      .contact-us .contact-us__fieldset .contact-us__display--newsletter {
-        grid-area: newsletter; }
-      .contact-us .contact-us__fieldset .contact-us__display--complete {
-        grid-area: complete; }
+    width: 90%; }
+    .contact-us .contact-us__fieldset {
+      width: auto; }
+      .contact-us .contact-us__fieldset .contact-us__display {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .7fr .2fr .2fr 1.5fr;
+        grid-template-areas: "nombre datos" "preferencia preferencia" "newsletter newsletter" "complete complete";
+        justify-items: center; }
+        .contact-us .contact-us__fieldset .contact-us__display--nombre {
+          grid-area: nombre;
+          align-self: center; }
+        .contact-us .contact-us__fieldset .contact-us__display--preferencia {
+          grid-area: preferencia; }
+        .contact-us .contact-us__fieldset .contact-us__display--datos {
+          grid-area: datos;
+          align-self: center; }
+        .contact-us .contact-us__fieldset .contact-us__display--newsletter {
+          grid-area: newsletter; }
+        .contact-us .contact-us__fieldset .contact-us__display--complete {
+          grid-area: complete; }
   iframe {
     width: 448px;
     height: 252px; }
@@ -295,7 +303,7 @@ iframe {
     padding: 1rem; }
   /*contact us ancho*/
   .contact-us {
-    width: 55%; }
+    width: 60%; }
   .carouselAncho {
     width: 90%;
     margin: auto; }

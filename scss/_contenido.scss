@@ -75,18 +75,29 @@
     margin: auto;
     padding: 10px;
     .contact-us__fieldset{
-        border: 1px black solid;
-        width: auto;
+        border: 5px black solid;
+        background-color: $ColorAmarillo;
         .contact-us__display{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            input{
+                transform: none;
+                background-color: rgba(128, 128, 128, 0.438);
+            }
+            .contact-us__display--complete{
+                textarea{
+                width: auto;
+                height: auto;
+                }
+            }
+    
         }
     }
 }
 
 input:focus{
-    transform:scale(1.2,1.2) ;
+    transform:scale(1.1,1.1) ;
 }
 iframe{
     width:448px*.64;
